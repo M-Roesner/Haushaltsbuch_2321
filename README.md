@@ -32,5 +32,12 @@ Dieses Projekt erstreckte sich über einen Zeitraum von 6 Wochen, in denen ich e
 Die Dokumentation des Projekts erfolgte nach den Standards der Industrie- und Handelskammer (IHK), um die Anforderungen für das Selbstpraktikum zu erfüllen.
 Detaillierte Informationen zur Projektkonzeption, -entwicklung und -dokumentation sind im Dokumentationsordner dieses Repositories zu finden.
 
-## Installation und Nutzung
+## Datenbank
+
+Eine Beispieldatenbankdatei (`...haushaltsbuch_datenbank.sql`) ist im Repository hinterlegt und kann zur Initialisierung verwendet werden.
+
+## Projektzeitraum
+
+- **Projektstart:** 1. Juli 2022
+- **Projektende:** 6 Wochen später
 
