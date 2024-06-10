@@ -1,0 +1,114 @@
+/* ----- Div General ----- */
+.divGenarals{
+    margin: var(--size-margin-between-double) auto;
+    padding: var(--size-padding-between);
+    border-radius: var(--border-radius);
+    border: var(--color-border-gray) solid 1px;
+    box-shadow: 2px 2px 5px var(--color-border-gray);
+}
+
+.divYear{
+    background-color: var(--color-background-middle);
+}
+
+.headline{
+    padding-left: var(--border-radius);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.headline .bilanzMonth,
+.headline .bilanzYear{
+    float: right;
+    border-radius: var(--border-radius);
+    padding: var(--size-padding-between-half);
+}
+
+.bilanzPositive{
+    background-color: var(--color-background-green-light);
+}
+.bilanzNegative{
+    background-color: var(--color-background-red-light);
+}
+
+/* ANCHOR Aufklappmenü */
+.divGenarals summary {
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+  
+.divGenarals summary > p {
+    display: inline;
+}
+
+details[open] summary ~ * {
+    animation: sweep .50s ease-in-out;
+  }
+  @keyframes sweep {
+    0%    {opacity: 0; margin-top: -10px}
+    100%  {opacity: 1; margin-top: 0px}
+  }
+
+/* ----- Table General ----- */
+.tableMonth{
+    border-spacing: 0 var(--size-spacing-table);
+    width: 100%;
+}
+
+.tableMonth td{
+    padding: var(--size-padding-between-half) var(--size-padding-between);
+}
+
+
+/* ----- Table Data ----- */
+.outputDate {
+    text-align: center;
+    width: 100px;
+    min-width: 100px;
+    border: var(--color-border-gray) solid 1px;
+    border-right: 0;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+    background-color: var(--color-background-dark);
+}
+
+.outputSubCat {
+    text-align: left;
+}
+
+.outputInfo {
+    text-align: right;
+}
+
+.outputPrice {
+    width: 100px;
+    min-width: 100px;
+    text-align: right;
+}
+
+.outputClear {
+    width: 40px;
+    min-width: 40px;
+    text-align: center;
+    border: var(--color-border-gray) solid 1px;
+    border-left: 0;
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    background-color: var(--color-background-dark);
+}
+
+.liAusgabe .outputSubCat,
+.liAusgabe .outputInfo,
+.liAusgabe .outputPrice {
+    background-color: var(--color-background-red-light);
+    border-top: var(--color-border-red) solid 1px;
+    border-bottom: var(--color-border-red) solid 1px;
+}
+
+.liEinnahme .outputSubCat,
+.liEinnahme .outputInfo,
+.liEinnahme .outputPrice {
+    background-color: var(--color-background-green-light);
+    border-top: var(--color-border-green) solid 1px;
+    border-bottom: var(--color-border-green) solid 1px;
+}

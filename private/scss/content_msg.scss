@@ -1,0 +1,20 @@
+/* ----- Benachrichtigung ----- */
+
+.divMsg{
+    margin: var(--size-margin-between-double) 0;
+}
+
+.alert{
+    font-size: 1.4em;
+    line-height: 2.5rem;
+    text-align: center;
+    border-radius: calc(var(--border-radius)*2);
+}
+
+.alert-danger{
+    background-color: var(--color-background-red-light);
+}
+
+.alert-success{
+    background-color: var(--color-background-green-light);
+}

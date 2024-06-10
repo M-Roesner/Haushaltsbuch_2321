@@ -1,0 +1,42 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+/* ANCHOR Header - Logo*/
+
+.logo{
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 150px;    
+}
+
+/* ANCHOR Header - Gesamtbilanz */
+.divBilanz{
+    margin-left: 0;
+}
+
+.divBilanz table {
+    margin: var(--size-margin-between) auto;
+    padding: var(--size-padding-between);
+    background-color: var(--color-background-dark);
+    border-radius: var(--border-radius);
+    border: var(--color-border-gray) solid 1px;
+    box-shadow: 1px 1px 5px var(--color-border-gray);
+}
+
+.divBilanz p {
+    line-height: 1.5rem;
+    padding: 0 var(--size-padding-between);
+}
+
+.bilanzMoney {
+    text-align: right;
+}
+
+#bilanzNameResult,
+#bilanzResult {
+    font-weight: bold;
+}

@@ -1,0 +1,273 @@
+/* ANCHOR Content - Ein/Ausgabe hinzufügen */
+
+/* ----- Benachrichtigungen ----- */
+
+.alert{
+    font-size: 1.4em;
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+.alert-danger{
+    background-color: var(--color-background-red-light);
+}
+
+.alert-success{
+    background-color: var(--color-background-green-light);
+}
+
+
+/* ----- Allgemeines ----- */
+
+.divForm,
+.divOutput,
+.divBilanz {
+    border: var(--color-second) solid 2px;
+    border-radius: calc(var(--border-radius)*2);
+    margin: var(--size-margin-between-double) 5%;
+    padding: var(--size-padding-between) 1%;
+}
+
+.add-groups {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: var(--size-margin-between) auto;
+    padding: var(--size-padding-between);
+    background-color: var(--color-background-dark);
+    border-radius: var(--border-radius);
+    border: var(--color-border-gray) solid 1px;
+    height: auto;
+}
+
+.divForm .inputField,
+.divForm .inputRadio {
+    border: var(--color-border-gray) solid 1px;
+    height: 25px;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.inputField:focus,
+.inputField:hover {
+    border: var(--color-border-blue) solid 1px;
+    outline-style: none;
+}
+
+
+/* ----- Grupppe Kategorie ----- */
+
+.add-cat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 33.3%;
+}
+
+.add-cat-group label {
+    display: block;
+    padding-bottom: calc(var(--size-padding-between)/2);
+}
+
+.add-cat-group .inputField {
+    width: 180px;
+}
+
+.divForm #cat {
+    /* FIXME Option Button überprüfen ...
+     übernimmt nicht die Werte richtig (z.B. Höhe, Breite, Farbe Rahmen)
+     und weiter Designen*/
+    height: 27px;
+}
+
+
+/* ----- Grupppe Rest ----- */
+
+.add-rest {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 33.3%;
+}
+
+.add-date-price-type-group .inputField {
+    width: 100px;
+}
+
+.divPrice .inputField{
+    width: 80px;
+}
+
+.add-rest span {
+    display: flex;
+    align-items: center;
+}
+
+.add-rest span input {
+    margin-right: 5px;
+}
+
+.divForm .inputRadio,
+.divForm .inputRadioLabel {
+    cursor: pointer;
+}
+
+
+/* ----- Buttons ----- */
+
+.add-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: var(--size-margin-between-double);
+}
+
+.btnForm {
+    padding: 5px 10px;
+    width: 160px;
+    border-radius: var(--border-radius);
+    background-color: var(--color-button);
+    border: var(--color-border-gray) solid 1px;
+    color: var(--color-third);
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.btnForm:hover {
+    background-color: var(--color-button-hover);
+    color: var(--color-second);
+    font-weight: bold;
+}
+
+/* ANCHOR Content - Jahresübersicht */
+
+
+.divYear{
+    padding: var(--size-padding-between);
+    
+    
+    
+    background-color: aqua;
+}
+
+
+/* ANCHOR Content - Monatsübersicht */
+
+
+/* ----- Allgemeines ----- */
+
+.divOutput h3 {
+    width: 650px;
+    margin: var(--size-margin-between-double) auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.divOutput ol {
+    margin: var(--size-margin-between-double) auto;
+    width: 650px;
+}
+
+.divOutput li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    border-radius: var(--border-radius);
+    background-color: var(--color-background-dark);
+    /*border: var(--color-border-gray) solid 1px;*/
+    margin-bottom: var(--size-margin-between-double);
+}
+
+.divOutput li span {
+    line-height: 2.5rem;
+}
+
+
+/* ----- Spans ----- */
+
+.outputDate {
+    width: 120px;
+    border: var(--color-border-gray) solid 1px;
+    border-right: 0;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+}
+
+.outputSubCat {
+    width: 180px;
+    text-align: left;
+    padding-left: 15px;
+    background-color: var(--color-background-red-light);
+}
+
+.outputInfo {
+    width: 180px;
+    padding-right: 15px;
+    text-align: right;
+}
+
+.outputPrice {
+    width: 110px;
+}
+
+.outputClear {
+    /*display: flex;
+    align-content: center;
+    justify-content: center;*/
+    width: 60px;
+    border: var(--color-border-gray) solid 1px;
+    border-left: 0;
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+
+.liAusgabe .outputSubCat,
+.liAusgabe .outputInfo,
+.liAusgabe .outputPrice {
+    background-color: var(--color-background-red-light);
+    border-top: var(--color-border-red) solid 1px;
+    border-bottom: var(--color-border-red) solid 1px;
+}
+
+.liEinnahme .outputSubCat,
+.liEinnahme .outputInfo,
+.liEinnahme .outputPrice {
+    background-color: var(--color-background-green-light);
+    border-top: var(--color-border-green) solid 1px;
+    border-bottom: var(--color-border-green) solid 1px;
+}
+
+
+/* ANCHOR Content - Gesamtbilanz */
+
+.divBilanz{
+    //padding: var(--size-padding-between);
+    width: 300px;
+}
+
+.divBilanz table {
+    margin: var(--size-margin-between-double) auto;
+    width: 280px;
+    border: var(--color-border-gray) solid 1px;
+    border-radius: var(--border-radius);
+    
+}
+
+.divBilanz p {
+    line-height: 1.5rem;
+    padding: 0 var(--size-padding-between);
+}
+
+/* .bilanzName {} */
+
+.bilanzMoney {
+    text-align: right;
+}
+
+#bilanzNameResult,
+#bilanzResult {
+    font-weight: bold;
+}

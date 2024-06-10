@@ -1,0 +1,147 @@
+/* ANCHOR Content - Ein/Ausgabe hinzufügen */
+
+/* ----- divForm Allgemeines ----- */
+
+.div-groups {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: var(--size-margin-between) auto;
+    padding: var(--size-padding-between);
+    background-color: var(--color-background-dark);
+    border-radius: var(--border-radius);
+    border: var(--color-border-gray) solid 1px;
+    box-shadow: 1px 1px 5px var(--color-border-gray);
+}
+
+.div-groups label{
+    font-weight: bold;
+}
+
+.inputField,
+.inputRadio {
+    border: var(--color-border-gray) solid 1px;
+    height: 30px;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.inputField:focus,
+.inputField:hover {
+    border: var(--color-border-blue) solid 1px;
+    outline-style: none;
+}
+
+
+/* ----- Grupppe Kategorie ----- */
+
+.add-group-cat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 33.3%;
+}
+
+.div-group-cat label {
+    display: block;
+    padding-bottom: calc(var(--size-padding-between)/2);
+}
+
+.div-group-cat .inputField {
+    width: 210px;
+    letter-spacing: 0.1rem;
+}
+
+
+/* ----- Grupppe Rest ----- */
+
+.add-group-rest {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 27%;
+}
+
+.div-group-date-price-type .inputField {
+    width: 120px;
+    letter-spacing: 0.1rem;
+}
+
+.add-group-rest-radio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 27%;
+}
+
+.add-group-rest-radio span {
+    display: flex;
+    align-items: center;
+}
+
+.add-group-rest-radio span input {
+    margin-right: 5px;
+}
+
+.divForm span label {
+    cursor: pointer;
+    padding: 7px;
+}
+
+.divForm .inputRadio{
+    display: none;    
+}
+
+.inputRadioLabelGreen {    
+    border: var(--color-border-gray) solid 1px;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+    background-color: var(--color-background-green-light);
+}
+
+.inputRadioLabelRed {    
+    border: var(--color-border-gray) solid 1px;
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    background-color: var(--color-background-red-light);
+}
+#einnahme:checked+label {
+    background-color: var(--color-background-green-dark);
+    color: var(--color-third);
+}
+#ausgabe:checked+label {
+    background-color: var(--color-background-red-dark);
+    color: var(--color-third);
+}
+
+
+
+/* ----- Buttons ----- */
+
+.add-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: var(--size-margin-between-double);
+}
+
+.btnForm {
+    padding: 5px 10px;
+    min-width: 160px;
+    max-width: 160px;
+    border-radius: var(--border-radius);
+    background-color: var(--color-button);
+    border: none;
+    box-shadow: 2px 2px 5px var(--color-button);
+    color: var(--color-third);
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.btnForm:hover {
+    background-color: var(--color-button-hover);
+    color: var(--color-second);
+    font-weight: bold;
+}
